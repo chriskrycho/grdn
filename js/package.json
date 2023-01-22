@@ -5,7 +5,8 @@
   "description": "The canonical TypeScript and JavaScript implementation of the `grdn` protocol",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "tsc"
+    "prepublishOnly": "tsc && cp ../README.md ./",
+    "postpublish": "rm README.md"
   },
   "repository": {
     "type": "git",
