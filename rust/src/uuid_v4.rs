@@ -1,3 +1,5 @@
+use std::str::FromStr;
+
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
@@ -7,6 +9,14 @@ pub(crate) struct UUIDv4(Uuid);
 impl UUIDv4 {
     pub(crate) fn new() -> UUIDv4 {
         UUIDv4(Uuid::new_v4())
+    }
+}
+
+impl FromStr for UUIDv4 {
+    type Err = uuid::Error;
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        Uuid::parse_str(s).map(UUIDv4)
     }
 }
 
