@@ -1,0 +1,18 @@
+{
+  "extends": "@tsconfig/node-lts-strictest-esm",
+  "compilerOptions": {
+    "noPropertyAccessFromIndexSignature": false,
+    "allowJs": false,
+    "checkJs": false,
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "test"
+  ]
+}

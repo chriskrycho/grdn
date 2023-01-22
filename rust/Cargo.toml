@@ -1,0 +1,20 @@
+[package]
+name = "grdn"
+version = "0.0.1"
+edition = "2021"
+description = "The canonical TypeScript and JavaScript implementation of the `grdn` protocol"
+authors = ["Chris Krycho <hello@chriskrycho.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+time = "0.3"
+serde = "1"
+
+[dependencies.uuid]
+version = "1"
+features = [
+    "v4",                # Lets you generate random UUIDs
+    "fast-rng",          # Use a faster (but still sufficiently random) RNG
+    "macro-diagnostics", # Enable better diagnostics for compile-time UUIDs
+]

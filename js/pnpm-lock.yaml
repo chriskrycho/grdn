@@ -1,0 +1,61 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@tsconfig/node-lts-strictest-esm': ^18.12.1
+  '@types/luxon': ^3.2.0
+  '@types/node': ^18.11.18
+  '@types/uuid': ^9.0.0
+  luxon: ^3.2.1
+  typescript: ^4.9.4
+  uuid: ^9.0.0
+  zod: ^3.20.2
+
+dependencies:
+  luxon: 3.2.1
+  uuid: 9.0.0
+  zod: 3.20.2
+
+devDependencies:
+  '@tsconfig/node-lts-strictest-esm': 18.12.1
+  '@types/luxon': 3.2.0
+  '@types/node': 18.11.18
+  '@types/uuid': 9.0.0
+  typescript: 4.9.4
+
+packages:
+
+  /@tsconfig/node-lts-strictest-esm/18.12.1:
+    resolution: {integrity: sha512-LvBLmaC6Q/txTddLc11OeMHF9XjJFzlilkETJuvBlUvHy9pPiMsoH3nxWZM1FMSO53zp4mJP6gzOzxKEq0me7Q==}
+    dev: true
+
+  /@types/luxon/3.2.0:
+    resolution: {integrity: sha512-lGmaGFoaXHuOLXFvuju2bfvZRqxAqkHPx9Y9IQdQABrinJJshJwfNCKV+u7rR3kJbiqfTF/NhOkcxxAFrObyaA==}
+    dev: true
+
+  /@types/node/18.11.18:
+    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
+    dev: true
+
+  /@types/uuid/9.0.0:
+    resolution: {integrity: sha512-kr90f+ERiQtKWMz5rP32ltJ/BtULDI5RVO0uavn1HQUOwjx0R1h0rnDYNL0CepF1zL5bSY6FISAfd9tOdDhU5Q==}
+    dev: true
+
+  /luxon/3.2.1:
+    resolution: {integrity: sha512-QrwPArQCNLAKGO/C+ZIilgIuDnEnKx5QYODdDtbFaxzsbZcc/a7WFq7MhsVYgRlwawLtvOUESTlfJ+hc/USqPg==}
+    engines: {node: '>=12'}
+    dev: false
+
+  /typescript/4.9.4:
+    resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
+
+  /uuid/9.0.0:
+    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
+    hasBin: true
+    dev: false
+
+  /zod/3.20.2:
+    resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==}
+    dev: false
