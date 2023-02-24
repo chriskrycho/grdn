@@ -28,13 +28,20 @@ const Update = z.object({
   change: Change,
 });
 
-const URL = z.string().transform((s) => {
-  try {
-    return new WebURL(s);
-  } catch {
-    return z.NEVER;
-  }
-});
+type Update = z.infer<typeof Update>;
+
+const URL = z
+  .string()
+  .transform((s) => {
+    try {
+      return new WebURL(s);
+    } catch {
+      return z.NEVER;
+    }
+  })
+  .brand<"URL">();
+
+type URL = z.infer<typeof URL>;
 
 const Item = z.object({
   title: z.string(),
